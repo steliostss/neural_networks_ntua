@@ -1,0 +1,48 @@
+def find_primes(N):
+    primes = []
+    for num in range(2,N):
+       # prime numbers are greater than 1
+        if num > 1:
+            for i in range(2,num):
+                if (num % i) == 0:
+                    break
+            else:
+                primes.append(num)
+    return(primes)
+                
+print(find_primes(10))
+
+
+
+import numpy as np
+def matrix_substraction(a,b):
+    shape1 = a.shape
+    shape2 = b.shape
+    if (shape1 == shape2):
+        return(np.subtract(a, b))
+
+a = np.array([[1,2,3],[4,5,6],[7,8,9]])
+b = np.array([[11,22,33],[44,55,66],[77,88,99]])
+c = np.array([[11,22,33],[44,55,66]])
+
+matrix_substraction(a,b)
+
+
+import math
+class Circle:
+    
+    def __init__(self, r):
+        # constructor
+        
+        self.radious = r 
+
+    def circumference(self):
+        return 2 *math.pi * self.radious
+        
+    def area(self):
+        return math.pi * self.radious * self.radious
+
+
+circle1 = Circle(10)
+print(circle1.circumference())
+print(circle1.area())
