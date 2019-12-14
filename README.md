@@ -4,8 +4,8 @@ Git repository for the course "Neural Networks" of ECE-NTUA.
 
 ### Team Members
 
-[](Korkovili Ioanna)
+[Korkovili Ioanna]()
 
-[](Xanthi Elena)
+[Xanthi Elena]()
 
-[](Tsagkarakis Stelios)
+[Tsagkarakis Stelios](https://github.com/steliostss)
