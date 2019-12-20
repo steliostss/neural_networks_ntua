@@ -231,8 +231,8 @@ train, test, train_labels, test_labels = train_test_split(np_samples,
                                                           np_labels, 
                                                           test_size=0.2)
 
-sampler = SMOTE()
-train, train_labels = sampler.fit_sample(np_samples, np_labels)
+# sampler = SMOTE()
+# train, train_labels = sampler.fit_sample(np_samples, np_labels)
 
 train_set_length = len(train)
 # print length of train set to validate oversampling
@@ -354,7 +354,7 @@ for i in predictions:
     print_precision_recall_fscore_support(i, test_labels, predictions[i], label_names)
 
 """##### Comments on the diagrams
-- Among the Dummy Classifiers, it is visible that the best strategy is 'constant 2' since class 2 is the most frequent one. Moreover, if we run the classification multiple times, we notice that 'stratified' strategy results in better accuracy more often than the 'uniform' strategy. This is because our dataset is not balanced and 'stratified' is more effiecient than the random strategy.
+- Among the Dummy Classifiers, it is visible that the best strategy is 'constant 2' since class 2 is the most frequent one. That is why it matches with the 'dc_most_frequent' Moreover, if we run the classification multiple times, we notice that 'stratified' strategy results in better accuracy more often than the 'uniform' strategy. This is because our dataset is not balanced and 'stratified' is more effiecient than the random strategy.
 
 ### k Nearest Neighbors Classifier (kNN)
 """
